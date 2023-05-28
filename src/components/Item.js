@@ -6,7 +6,7 @@ function Item(props) {
         <div className={'item-wrapper'}>
             <input className={'checkbox'} type="checkbox" checked={checked} onChange={() => setChecked(!checked)}/>
             <div className={'text'}>
-                <p>{props.text}</p>
+                {props.text}
             </div>
         </div>
     );

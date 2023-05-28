@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './ItemAdder.css'
-import Item from "./Item";
 function ItemAdder(props) {
     const addItem = function () {
         let itemText = text;

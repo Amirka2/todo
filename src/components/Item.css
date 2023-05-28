@@ -3,12 +3,7 @@
     height: 10px;
 }
 .checkbox .text {
-    display: block;
+    height: 30px;
     width: 90%;
     min-width: 300px;
-    text-align: left;
-    vertical-align: center;
-}
-.checkbox .text > p {
-    margin: 0;
 }
