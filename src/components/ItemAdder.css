@@ -1,13 +1,11 @@
-.wrapper {
-    width: 100%;
-    height: 40px;
-    border: 1px solid black;
-    margin-bottom: 2px;
-}
-.wrapper > input {
+.item-wrapper > .text-input {
     height: 100%;
     width: 90%;
     min-width: 300px;
     display: block;
     border: none;
+}
+input#add-btn {
+    width: 10%;
+    height: 100%;
 }

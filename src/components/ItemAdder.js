@@ -1,9 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './ItemAdder.css'
+import Item from "./Item";
 function ItemAdder(props) {
+    const addItem = function () {
+        let itemText = text;
+        setText('');
+
+        props.add(itemText);
+    }
+    const [text, setText] = useState('');
     return (
-        <div className={'wrapper'}>
-            <input />
+        <div className={'item-wrapper'}>
+            <input className={'text-input'}
+                type={'text'}
+                name={'input'}
+                value={text}
+                onChange={(event => setText(event.target.value))}
+            />
+            <input id={'add-btn'}
+                type={'submit'}
+                value={'Add'}
+                onClick={addItem}
+            />
         </div>
     );
 }
