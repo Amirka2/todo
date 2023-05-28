@@ -1,6 +1,6 @@
 import React from 'react';
-import './Item_adder.css'
-function Item_adder(props) {
+import './ItemAdder.css'
+function ItemAdder(props) {
     return (
         <div className={'wrapper'}>
             <input />
@@ -8,4 +8,4 @@ function Item_adder(props) {
     );
 }
 
-export default Item_adder;
+export default ItemAdder;
