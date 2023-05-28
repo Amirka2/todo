@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header";
+import ItemAdder from "./components/ItemAdder";
+import {useState} from "react";
+import Item from "./components/Item";
 
 function App() {
+  const [items, setItems] = useState([]);
+  const [checkboxes, setCheckboxes] = useState([]);
+
+  const printItems = items.map((element, checked,index) => {
+    return <Item text={element} checked={checked} changeCheckbox={changeCheckbox}/>;
+  });
+
+  function changeCheckbox(checked) {
+    return !checked;
+  }
+  function addItem(itemText) {
+    setItems([...items, itemText]);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      {printItems}
+      <ItemAdder add={addItem}/>
     </div>
   );
 }
