@@ -6,9 +6,9 @@ import Item from "./components/Item";
 
 function App() {
   const [items, setItems] = useState([]);
-  const [checkboxes, setCheckboxes] = useState([]);
+  const [id, setId] = useState(0);
 
-  const printItems = items.map((element, checked,index) => {
+  const printItems = items.map((element, checked) => {
     return <Item text={element} checked={checked} changeCheckbox={changeCheckbox}/>;
   });
 
