@@ -1,10 +1,9 @@
 .checkbox {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     margin: 0 10px 0 10px;
 }
-.checkbox .text {
-    height: 30px;
-    width: 90%;
-    min-width: 300px;
+.item-wrapper .text {
+    min-height: 30px;
+    padding: 5px;
 }
