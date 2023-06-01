@@ -1,6 +1,7 @@
 .checkbox {
     width: 10px;
     height: 10px;
+    margin: 0 10px 0 10px;
 }
 .checkbox .text {
     height: 30px;
